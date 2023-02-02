@@ -1,0 +1,140 @@
+html{
+    font-size: 10px;
+    color: #151415;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+}
+
+main{
+    max-width: 50rem;
+    margin: 2rem auto;
+    background: linear-gradient(20deg ,pink , violet);
+    padding: 3rem 1.6rem 6rem 1.6rem;
+    border-radius: 5rem ;
+    box-shadow: 40px 5px 142px 17px #EFA2EF;
+    ;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    margin: 0; 
+    padding-bottom: 3rem ; 
+    color: black;
+}
+
+.image{
+    text-align: center;
+}
+h2{
+    font-size: 2rem;
+    color: rgb(53, 20, 222);
+
+}
+/* Dashed red border */
+hr{
+    border-top: 2px dashed red;
+}
+
+img{
+    size: small;
+}
+
+section{
+    background-color: white;
+    font-size: 1.8rem;
+    margin-bottom: 1.6rem; 
+    padding: 0 1.6rem;
+    border-radius: 2rem;
+    /* box-shadow: 40px -5px 170px 17px #EFA2EF; */
+    box-shadow: inset -5px 25px 197px 24px cornsilk;
+
+
+}
+
+section > div {
+    /* only the direct children to the section */
+
+    padding: 1.6rem 0;
+
+
+
+}
+
+
+.bill{
+    display: flex;
+    color: black;
+    font-size: larger;
+}
+
+.bill label{
+    flex: 1;
+    align-self: center;
+    /* Since we're using the flexbox, we can set a flex value of one, and then just below this, we can target the bill input, and give this a flex value of three. Save and reload. This now means that the input will take up three times the available space as our labe */
+}
+
+.bill input{
+    flex: 3;
+    /* Since we're using the flexbox, we can set a flex value of one, and then just below this, we can target the bill input, and give this a flex value of three. Save and reload. This now means that the input will take up three times the available space as our labe */
+}
+
+
+
+input[type="number"]{
+    background-color: rgb(253, 253, 253);
+    font-size: 2rem;
+    font-family: inherit; /* to inherit it from the html root */
+    border: 2px solid rgb(1, 1, 1);
+    border-radius: 1rem ;
+    padding: 0.8rem 0 0.8rem 0.8rem ;
+
+}
+
+.needSpace{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-weight: 500;
+    font-size: larger;
+}
+
+
+.total{
+    font-size: 2rem ;
+    font-weight: bolder;
+}
+
+.range{
+/* styling the range slider from scratch  */
+appearance:none ;
+width: 100%;
+height: 10px;
+background-color: rgb(244, 192, 192);
+margin-top: 1.2rem;
+border-radius:0.5rem ;
+outline-color: red ;
+}
+
+.range::-webkit-slider-thumb{
+    appearance:none ;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+}
+
+/* For firefox users */
+.range::-moz-range-thumb{
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+}
+
+.range::-moz-focus-outer{
+    border: 0;
+}
