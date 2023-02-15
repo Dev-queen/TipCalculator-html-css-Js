@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,600;1,500;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Quick Tip</title>
+</head>
+<body>
+    <main id="contentUpdate">
+        <h1>✨Tip Calculator✨</h1>
+                <!-- <h1> ⭐
+                Tip Calculator  ⭐
+                </h1> -->
+
+
+        <section>
+            <div class="bill">
+                <label for="MyBill">Bill</label>
+            <!-- as we are going to listen for a click , we will add onclick 
+            but now we want the function to be called when a user inputs anything-->
+                <input type="number" placeholder="Enter your bill" id="MyBill"
+                 oninput="updateMyCalc()">
+            </div>
+
+            <div>
+                <div class="needSpace">
+                    <label for="tipInput">Select your tip </label>
+                    <!-- <span id="tipPercent">0%</span> -->
+                    <span id="tipPercent"> </span>
+
+                </div>
+                <input type="range" class="range" value="0" id="tipInput">
+
+            </div>
+
+            <div class="needSpace">
+                <span>Tip</span>
+                <span id="tipValue" ></span>
+            </div>
+            <hr>
+
+            <div class="needSpace total">
+                <span>Total</span>
+                <span id="TotalBillWithTip" ></span>
+
+            </div>
+            </section>
+
+            <!-- 2nd section of our Tip calculator -->
+
+            <section>
+                <div>
+                    <div class="needSpace">
+                        <label for="splitInput">Split</label>
+                        <!-- <span id="splitValue">1 Person</span> -->
+                        <span id="splitValue"> </span>
+
+                    </div>
+                    <input type="range" id="splitInput" class="range" min="1" max="15" value="1">
+
+                </div>
+
+                <div class="needSpace">
+                    <span>Bill each</span>
+                    <span id="BillEach"></span>
+
+                </div>
+
+                <div class="needSpace">
+                    <span>Tip each</span>
+                    <span id="TipEach"></span>
+                </div>
+
+            </section>
+            <div class="image"><img src="undraw_appreciation_yy29.svg" alt="" srcset="">
+                <h2>Made with love by <em> youmna ^_^</em></h2>
+            </div>
+
+    </main>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
